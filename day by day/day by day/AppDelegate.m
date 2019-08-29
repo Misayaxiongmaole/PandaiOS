@@ -9,7 +9,10 @@
 #import "AppDelegate.h"
 
 #import "PDHomeViewController.h"
-
+#import "PDNewViewController.h"
+#import "PDPublishViewController.h"
+#import "PDGuanZhuViewController.h"
+#import "PDMeViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,16 +22,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    //创建窗口
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
+    //创建Tabbar 、设置k窗口控制器
     UITabBarController *tabbarVC = [[UITabBarController alloc]init];
-    
     self.window.rootViewController = tabbarVC;
     
+    PDHomeViewController *pdhomeVC = [[PDHomeViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:pdhomeVC];
+    
+    [tabbarVC addChildViewController:nav];
     
     
+    PDNewViewController *newVC = [[PDNewViewController alloc]init];
     
+    
+    //现实窗口
     [self.window makeKeyWindow];
     // Override point for customization after application launch.
     return YES;
