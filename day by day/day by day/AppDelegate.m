@@ -34,9 +34,24 @@
     
     [tabbarVC addChildViewController:nav];
     
-    
     PDNewViewController *newVC = [[PDNewViewController alloc]init];
+    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:newVC];
     
+    [tabbarVC addChildViewController:nav1];
+    
+    PDPublishViewController *publishVC = [[PDPublishViewController alloc]init];
+
+    [tabbarVC addChildViewController:publishVC];
+    
+    PDGuanZhuViewController *guanzhuVC = [[PDGuanZhuViewController alloc]init];
+    UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:guanzhuVC];
+    
+    [tabbarVC addChildViewController:nav2];
+    
+    PDMeViewController *meVC = [[PDMeViewController alloc]init];
+    UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:meVC];
+    
+    [tabbarVC addChildViewController:nav3];
     
     //现实窗口
     [self.window makeKeyWindow];

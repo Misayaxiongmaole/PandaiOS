@@ -20,6 +20,7 @@
 		0491114C23181662003D4C6A /* PDPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491114B23181662003D4C6A /* PDPublishViewController.m */; };
 		0491114F23181679003D4C6A /* PDGuanZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491114E23181679003D4C6A /* PDGuanZhuViewController.m */; };
 		0491115223181684003D4C6A /* PDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491115123181684003D4C6A /* PDMeViewController.m */; };
+		0491115623182020003D4C6A /* PDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491115523182020003D4C6A /* PDTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		0491114E23181679003D4C6A /* PDGuanZhuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDGuanZhuViewController.m; sourceTree = "<group>"; };
 		0491115023181684003D4C6A /* PDMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDMeViewController.h; sourceTree = "<group>"; };
 		0491115123181684003D4C6A /* PDMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDMeViewController.m; sourceTree = "<group>"; };
+		0491115423182020003D4C6A /* PDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTabBarController.h; sourceTree = "<group>"; };
+		0491115523182020003D4C6A /* PDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				0491114E23181679003D4C6A /* PDGuanZhuViewController.m */,
 				0491115023181684003D4C6A /* PDMeViewController.h */,
 				0491115123181684003D4C6A /* PDMeViewController.m */,
+				0491115423182020003D4C6A /* PDTabBarController.h */,
+				0491115523182020003D4C6A /* PDTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0491115623182020003D4C6A /* PDTabBarController.m in Sources */,
 				0491114C23181662003D4C6A /* PDPublishViewController.m in Sources */,
 				0491114F23181679003D4C6A /* PDGuanZhuViewController.m in Sources */,
 				049111492318164A003D4C6A /* PDNewViewController.m in Sources */,
