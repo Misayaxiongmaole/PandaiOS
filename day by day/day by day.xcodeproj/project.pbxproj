@@ -21,6 +21,9 @@
 		0491114F23181679003D4C6A /* PDGuanZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491114E23181679003D4C6A /* PDGuanZhuViewController.m */; };
 		0491115223181684003D4C6A /* PDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491115123181684003D4C6A /* PDMeViewController.m */; };
 		0491115623182020003D4C6A /* PDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491115523182020003D4C6A /* PDTabBarController.m */; };
+		04AF966C231931BB00C5E4BE /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AF966B231931BB00C5E4BE /* PersonViewController.m */; };
+		04AF967123193A0500C5E4BE /* UIImage+PDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AF967023193A0500C5E4BE /* UIImage+PDImage.m */; };
+		04AF96742319434A00C5E4BE /* PDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AF96732319434A00C5E4BE /* PDTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,12 @@
 		0491115123181684003D4C6A /* PDMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDMeViewController.m; sourceTree = "<group>"; };
 		0491115423182020003D4C6A /* PDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTabBarController.h; sourceTree = "<group>"; };
 		0491115523182020003D4C6A /* PDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTabBarController.m; sourceTree = "<group>"; };
+		04AF966A231931BB00C5E4BE /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		04AF966B231931BB00C5E4BE /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		04AF966F23193A0500C5E4BE /* UIImage+PDImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDImage.h"; sourceTree = "<group>"; };
+		04AF967023193A0500C5E4BE /* UIImage+PDImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDImage.m"; sourceTree = "<group>"; };
+		04AF96722319434A00C5E4BE /* PDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTabBar.h; sourceTree = "<group>"; };
+		04AF96732319434A00C5E4BE /* PDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				04911143231815BA003D4C6A /* Controller */,
-				04911111231810B3003D4C6A /* AppDelegate.h */,
-				04911112231810B3003D4C6A /* AppDelegate.m */,
-				04911114231810B3003D4C6A /* ViewController.h */,
-				04911115231810B3003D4C6A /* ViewController.m */,
+				04AF966D231931F700C5E4BE /* other */,
+				04AF966A231931BB00C5E4BE /* PersonViewController.h */,
+				04AF966B231931BB00C5E4BE /* PersonViewController.m */,
 				04911117231810B3003D4C6A /* Main.storyboard */,
 				0491111A231810C0003D4C6A /* Assets.xcassets */,
 				0491111C231810C0003D4C6A /* LaunchScreen.storyboard */,
@@ -154,6 +162,10 @@
 		04911143231815BA003D4C6A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04911111231810B3003D4C6A /* AppDelegate.h */,
+				04911112231810B3003D4C6A /* AppDelegate.m */,
+				04911114231810B3003D4C6A /* ViewController.h */,
+				04911115231810B3003D4C6A /* ViewController.m */,
 				0491114423181611003D4C6A /* PDHomeViewController.h */,
 				0491114523181611003D4C6A /* PDHomeViewController.m */,
 				049111472318164A003D4C6A /* PDNewViewController.h */,
@@ -166,8 +178,27 @@
 				0491115123181684003D4C6A /* PDMeViewController.m */,
 				0491115423182020003D4C6A /* PDTabBarController.h */,
 				0491115523182020003D4C6A /* PDTabBarController.m */,
+				04AF96722319434A00C5E4BE /* PDTabBar.h */,
+				04AF96732319434A00C5E4BE /* PDTabBar.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		04AF966D231931F700C5E4BE /* other */ = {
+			isa = PBXGroup;
+			children = (
+				04AF966E2319399700C5E4BE /* Category */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		04AF966E2319399700C5E4BE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04AF966F23193A0500C5E4BE /* UIImage+PDImage.h */,
+				04AF967023193A0500C5E4BE /* UIImage+PDImage.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +263,7 @@
 		04911106231810B3003D4C6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = PD;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
@@ -302,12 +333,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0491115623182020003D4C6A /* PDTabBarController.m in Sources */,
+				04AF96742319434A00C5E4BE /* PDTabBar.m in Sources */,
 				0491114C23181662003D4C6A /* PDPublishViewController.m in Sources */,
 				0491114F23181679003D4C6A /* PDGuanZhuViewController.m in Sources */,
 				049111492318164A003D4C6A /* PDNewViewController.m in Sources */,
 				04911116231810B3003D4C6A /* ViewController.m in Sources */,
+				04AF966C231931BB00C5E4BE /* PersonViewController.m in Sources */,
 				0491115223181684003D4C6A /* PDMeViewController.m in Sources */,
 				0491114623181611003D4C6A /* PDHomeViewController.m in Sources */,
+				04AF967123193A0500C5E4BE /* UIImage+PDImage.m in Sources */,
 				04911121231810C0003D4C6A /* main.m in Sources */,
 				04911113231810B3003D4C6A /* AppDelegate.m in Sources */,
 			);

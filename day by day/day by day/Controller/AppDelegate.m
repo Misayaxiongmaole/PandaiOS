@@ -7,12 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "PDTabBarController.h"
 
-#import "PDHomeViewController.h"
-#import "PDNewViewController.h"
-#import "PDPublishViewController.h"
-#import "PDGuanZhuViewController.h"
-#import "PDMeViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -26,32 +23,10 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     //创建Tabbar 、设置k窗口控制器
-    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
+    PDTabBarController *tabbarVC = [[PDTabBarController alloc]init];
     self.window.rootViewController = tabbarVC;
     
-    PDHomeViewController *pdhomeVC = [[PDHomeViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:pdhomeVC];
-    
-    [tabbarVC addChildViewController:nav];
-    
-    PDNewViewController *newVC = [[PDNewViewController alloc]init];
-    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:newVC];
-    
-    [tabbarVC addChildViewController:nav1];
-    
-    PDPublishViewController *publishVC = [[PDPublishViewController alloc]init];
-
-    [tabbarVC addChildViewController:publishVC];
-    
-    PDGuanZhuViewController *guanzhuVC = [[PDGuanZhuViewController alloc]init];
-    UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:guanzhuVC];
-    
-    [tabbarVC addChildViewController:nav2];
-    
-    PDMeViewController *meVC = [[PDMeViewController alloc]init];
-    UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:meVC];
-    
-    [tabbarVC addChildViewController:nav3];
+   
     
     //现实窗口
     [self.window makeKeyWindow];
